@@ -6,26 +6,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table In HTML</title>
     <style>
-        table , td,tr{
+        table , td,tr,th{
             border: 1px solid black;
             border-collapse: collapse;
+            text-align: center;/* To Center the colspan and roespan content in center  */
+
+            /*To write Heading of table in bottom of table */
+            /* caption-side: bottom;*/ 
         }
     </style>
 </head>
 <body>
     <table>
+        <!-- colgroup tag = sabhi column ka ek group bana liya.(rowgroup kuch nahi hota uski CSS ke liye hum id or classes ka use karte h)
+        
+            col = isse humne column o select kr liya.
+
+            span = jitne columne chahiye starting se vo number likh doo.
+            span = "2" means starting ke  column.
+
+            abb jo property lagani h usee style attribute ke andar laga doo.
+        -->
+
+        <colgroup>
+            <!-- <col span="1">
+            <col span="1" style="background-color: aqua;"> -->
+            <col span="1">
+            <col span="1" style="background-color: aqua;">
+            <!-- To Hide any coloumn (3rd col hide) -->
+            <!-- <col span="1" style="visibility: collapse;"> -->
+            <col span="1">
+        </colgroup>
+
+
+        <!-- Heading of y table -->
+        <caption>This My First Table</caption>
         <tr>
-            <td>Name</td>
-            <td>Age</td>
+            <!-- If we wan'this data in bold we use "th" rather than "td" -->
+
+            <!-- <td>Name</td>
+            <td>Age</td> -->
+
+           <th>Name</th>
+           <th>Age</th>
+           <th>Marks</th>
         </tr>
+
+        <!-- Colspan = expand cell in column 
+        rowspan = expand cell in Row -->
+        <!-- Example -->
+        <!-- <tr>
+        <td colspan="2">Ravi</td>
+        <td rowspan="3">19</td>
+        </tr> -->
+
         <tr>
         <td>Ravi</td>
         <td>19</td>
+        <td>100</td>
         </tr>
+        
+        <tr>
+            <td>Rahul</td>
+            <td>20</td>
+            <td>98</td>
+        </tr>
+
         <tr>
             <td>Krishna</td>
-            <td>1997475270</td>
+            <td>14</td>
+            <td>99</td>
         </tr>
+
+        <tr>
+            <td>Harsh</td>
+            <td>16</td>
+            <td>96</td>
+        </tr>
+
+        <tr>
+            <th colspan="2">Total</th>
+            <!-- <td>14</td> -->
+            <td>250</td>
+        </tr>
+
     </table>
 </body>
 </html>
+
+
+<!-- 
+     ****** SUMMARY ******
+    -> table attribute
+    -> thead (th)
+    -> tdata(table coloumn td)
+    -> trow (tr)
+    -> table head ko <thead> me rakho.
+    -> table foot ko <tfooter> me rakho.
+    -> colspan = to expand coloumn.
+    -> rowspan = to expand row.
+    -> colgroup = sabhi coloumn ko ek grp me     daal    dena, in this we use col,span (background-color),visibility(any col hide).
+    -> rowgroup kuch nahi hota for their styling we use id or classes.
+
+-->
