@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Form</title>
+</head>
+<body>
+    <h1>Contact Us Form</h1>
+    <form action="#">
+
+        <label for="name">Name :</label>
+        <input type="text" placeholder="Yash">
+        <br>
+
+        <label for="email">E-mail :</label>
+        <input type="email" name="email"
+        id="email"placeholder="abc@gmail.com">
+        <br>
+
+        <label for="number">Number :</label>
+        <input type="number" placeholder="+91-99999999">
+        <br>
+
+        <label for="gender">Gender :</label>
+        <select name="gender" id="gender">
+            <option value="select">Select</optiont>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+        <br>
+
+        <label for="dob">Date Of Birth :</label>
+        <input type="date">
+        <br>
+
+        Rating :
+
+       <input type="radio"name="rating1" value="rating1" id="rating1">
+       <label for="rating1">1</label>
+       <input type="radio"name="rating1" value="rating2" id="rating2">
+       <label for="rating2">2</label>
+       <input type="radio"name="rating1" value="rating3" id="rating3">
+       <label for="rating3">3</label>
+       <input type="radio"name="rating1" value="rating4" id="rating4">
+       <label for="rating3">4</label>
+       <input type="radio"name="rating1" value="rating5" id="rating5">
+       <label for="rating3">5</label>
+        <br>
+       <label for="nsg">Enter Your Message :</label> <br>
+       <textarea name="msg" id="msg" cols="30" rows="5"></textarea>
+       <br>
+
+       <footer>
+       
+        <a href="https://www.youtube.com/" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/800px-YouTube_full-color_icon_%282017%29.svg.png" alt="Youtube Image" height="40" width="40">
+
+        </a>
+ 
+
+        <a href="https://www.whatsaap.com/" target="_blank">
+            <img src="https://cdn-icons-png.flaticon.com/512/124/124034.png" alt="Whatsapp Image" height="40" width="40">
+
+        </a>
+       
+
+        <a href="https://www.instagram.com/" target="_blank">
+            <img src="https://cdn.pixabay.com/photo/2016/08/09/17/52/instagram-1581266__340.jpg" alt="Instagram Image" height="40" width="40">
+
+        </a>
+        
+
+       </footer>
+        <input type="submit">
+        <input type="reset">
+
+
+
+
+    </form>
+</body>
+</html>
